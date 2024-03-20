@@ -16,8 +16,15 @@ pip install -r requirements.txt
 
 ## Usage
 
-enter your bot's token into the "token" variable
++ Enter your bot's token into the "token" variable so that the program can launch the bot
+
+``` python
+token = "Your Token"
 
 ```
 
++ Run main.py
+
+```
+python main.py
 ```
