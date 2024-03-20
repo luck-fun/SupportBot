@@ -7,7 +7,7 @@ class Report(commands.Cog):
 
     @commands.slash_command()
     async def report(self, inter, member: disnake.Member, reason):
-        support_role = inter.guild.get_role(1218472518290243704) #insert the ID of the role that will be responsible for the reports here
+        support_role = inter.guild.get_role(...) #insert the ID of the role that will be responsible for the reports here
         if not disnake.utils.get(inter.guild.channels, name="reports"):
             channel = await inter.guild.create_text_channel("reports") #the channel where reports will be sent for further consideration
 
