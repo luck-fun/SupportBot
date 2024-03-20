@@ -43,12 +43,14 @@ class Question(commands.Cog):
         global questioner
         global message
         view = QuestionView()
+        support_role = inter.guild.get_role(
+            ...)  # insert the ID of the role that will be responsible for the reports here
         if not disnake.utils.get(inter.guild.channels, name="questions"):
             questioner = inter.author #member, who asking the question
             channel = await inter.guild.create_text_channel("questions")
             await channel.set_permissions(inter.guild.default_role, view_channel=False, send_messages=False,
                                           read_messages=False)
-            await channel.set_permissions(inter.guild.get_role(1218472518290243704), view_channel=True,
+            await channel.set_permissions(support_role, view_channel=True,
                                           send_messages=True, read_messages=True,
                                           read_message_history=True, attach_files=True, embed_links=True,
                                           add_reactions=True, external_emojis=True, use_external_emojis=True,
@@ -65,7 +67,7 @@ class Question(commands.Cog):
             channel = disnake.utils.get(inter.guild.channels, name="questions")
             await channel.set_permissions(inter.guild.default_role, view_channel=False, send_messages=False,
                                           read_messages=False)
-            await channel.set_permissions(inter.guild.get_role(1218472518290243704), view_channel=True,
+            await channel.set_permissions(support_role, view_channel=True,
                                           send_messages=True, read_messages=True,
                                           read_message_history=True, attach_files=True, embed_links=True,
                                           add_reactions=True, external_emojis=True, use_external_emojis=True,
