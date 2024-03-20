@@ -8,7 +8,16 @@ This discord bot can receive complaints or questions from members of the discord
 
 ## Setup
 
-To make the bot work, install the requirements.txt
+To make the bot work, install the requirements.txt file with the dependencies in it
+
+```
+pip install -r requirements.txt
+```
+
+## Usage
+
+enter your bot's token into the "token" variable
+
 ```
 
 ```
