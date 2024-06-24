@@ -14,7 +14,7 @@ To make the bot work, install the requirements.txt file with the dependencies in
 pip install -r requirements.txt
 ```
 
-## Usage
+## Usag
 
 + Enter your bot's token into the "token" variable so that the program can launch the bot
 
