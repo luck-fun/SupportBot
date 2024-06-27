@@ -12,11 +12,6 @@ charset-normalizer==2.1.1
 click==8.1.7
 colorama==0.4.6
 cookiecutter==2.5.0
-discord==2.1.0
-discord-py-interactions==5.3.1
-discord-typings==0.5.1
-discord.py==2.2.2
-disnake==2.9.1
 emoji==2.2.0
 flet==0.18.0
 flet-core==0.18.0
